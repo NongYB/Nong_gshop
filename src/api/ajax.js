@@ -3,7 +3,6 @@
  * 返回值：promise对象（异步返回的数据是：response.data）
  */
 import axios from 'axios'
-import { resolver } from 'stylus'
 export default function ajax(url,data={},type='GET'){
 
     return new Promise(function(resolve,reject){
@@ -27,7 +26,7 @@ export default function ajax(url,data={},type='GET'){
         }
         promise.then(function(response){
             //成功了调用resolve()
-            resolver(response.data)
+            resolve(response.data)
         }).catch(function(error){
             //失败了调用reject
             reject(error)
