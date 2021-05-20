@@ -14,10 +14,13 @@ export default{
    mounted(){
      //this.$store.dispatch("getAddress")
      this.getAddress()
+
+     //获取用户信息
+     this.getuserInfo()
    },
 
    methods: {
-     ...mapActions(['getAddress'])
+     ...mapActions(['getAddress','getuserInfo'])
    },
 
   components:{
