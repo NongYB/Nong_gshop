@@ -27,6 +27,16 @@ const BASE_URL='/api'
 //  10、用户登出
  const reqLogout=()=>ajax(BASE_URL+'/logout')
 
+//获取商家信息
+ const reqShopInfo=()=>ajax('/info')
+
+ //获取商家评论数组
+ const reqShopRatings=()=>ajax('/ratings')
+
+ //获取商家商品数组
+ const reqShopGoods=()=>ajax('/goods')
+
+
 export{
     reqAddress,
     reqFoodCategory,
@@ -37,6 +47,9 @@ export{
     reqSendCode,
     reqSmsLogin,
     reqUserInfo,
-    reqLogout
+    reqLogout,
+    reqShopInfo,
+    reqShopRatings,
+    reqShopGoods
 
 }
