@@ -5,7 +5,9 @@
                :key="index" @click="$router.push('/shop')">
                 <a>
                   <div class="shop_left">
-                    <img class="shop_img" :src="baseImgUrl+shop.image_path">
+                    <!-- <img class="shop_img" :src="baseImgUrl+shop.image_path" > -->
+                    <img class="shop_img"  
+                    src="./images/4.jpg">
                   </div>
                   <div class="shop_right">
                     <section class="shop_detail_header">
